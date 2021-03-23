@@ -1,0 +1,29 @@
+.post_wrap {
+  width: 100%;
+  float: left;
+}
+.news_input {
+  height: 40px;
+  width: 85%;
+  margin: 10px;
+  padding-left: 20px;
+  border-radius:8px;
+  border: 3px solid black;
+  resize: none;
+}
+.send{
+  padding:15px 25px 15px 25px;
+  border-radius: 5px;
+  background: lightseagreen;    
+}
+.send:hover{
+  transition:170ms;
+  background:lightcoral;
+}
+.send_wrap{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 150px;
+}

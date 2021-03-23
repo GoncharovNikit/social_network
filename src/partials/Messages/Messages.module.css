@@ -1,0 +1,52 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogs {
+  border-right: 3px solid black;
+  width: 60%;
+  height: 70vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  
+}
+.messages {
+  border: 3px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 69vh;
+  position: relative;
+}
+.area_btn_wrap {
+  margin: 10px;
+  width: 99%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.message_text_area {
+  width: 85%;
+  height: inherit;
+  resize: none;
+}
+.btn_send_msg {
+  width: 15%;
+  height: inherit;
+  border: 5px solid black;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  background: rgb(247, 248, 168);
+  font-size: 18pt;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.btn_send_msg:hover {
+  transition: 200ms;
+  background: lightblue;
+}

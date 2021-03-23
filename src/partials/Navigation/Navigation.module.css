@@ -1,0 +1,26 @@
+.nav{
+    grid-area: n;
+    background-color:rgb(176, 176, 219);
+    border-radius: 10px;
+  
+}
+li a{
+    text-decoration: none;
+    color:black;
+    font-size: 15pt;
+    font-weight: 800;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li .active{
+    color:rgb(149, 151, 8);
+    text-shadow: 0 0 3px white;
+}
+.friends{
+    margin-top: 40px;
+}
+.friends:last-child{
+    margin-bottom: 30px;
+}
