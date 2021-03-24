@@ -1,0 +1,52 @@
+.user_wrap {
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_text_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  padding-left: 20px;
+}
+.avatar_follow_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.follow_btn {
+  width: 140px;
+  background: lightcoral;
+  color: black;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  padding: 4px;
+  margin-top: 5px;
+}
+.follow_btn:hover {
+  background-color: brown;
+  color: lightgoldenrodyellow;
+  transition: 150ms;
+}
+.avatar {
+  width: 50px;
+  border-radius: 40%;
+}
+.user_name {
+  font-size: 14pt;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+.user_location {
+  padding-left: 20px;
+}

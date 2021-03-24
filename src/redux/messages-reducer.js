@@ -50,23 +50,22 @@ let initialState = {
 const messagesReducer = (state = initialState, action) => {
   let stateCopy;
   switch (action.type) {
-    case ADD_MESSAGE: {
-      
-      if (state.message_current_text == "") return state;
-      stateCopy = {
+    case ADD_MESSAGE:
+      return state.message_current_text == ""
+        ? state
+        : {
+            ...state,
+            message_current_text: "",
+            messagesData: [
+              ...state.messagesData,
+              { id: 10, message: state.message_current_text },
+            ],
+          };
+    case MESSAGE_TEXT_CHANGE:
+      return {
         ...state,
-        message_current_text: "",
-        messagesData: [
-          ...state.messagesData, { id: 10, message: state.message_current_text },
-        ],
+        message_current_text: action.newText,
       };
-      return stateCopy;
-    }
-    case MESSAGE_TEXT_CHANGE: {
-      stateCopy = { ...state };
-      stateCopy.message_current_text = action.newText;
-      return stateCopy;
-    }
   }
 
   return state;

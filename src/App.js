@@ -7,6 +7,7 @@ import MessagesContainer from "./partials/Messages/MessagesContainer";
 import Settings from "./partials/Settings/Settings";
 import Music from "./partials/Music/Music";
 import News from "./partials/News/News";
+import UsersContainer from "./partials/Users/UsersContainer";
 import { Redirect, Route } from "react-router-dom";
 
 function App(props) {
@@ -16,27 +17,10 @@ function App(props) {
       <Header />
       <Navigation state={props.store.getState().navbar} />
       <div className="content">
-        <Route
-          path="/messages"
-          render={() => (
-            <MessagesContainer
-              // state={props.store.getState().messages}
-              // dispatch={props.store.dispatch}
-              // store={props.store}
-            />
-          )}
-        />
-        <Route
-          path="/profile"
-          render={() => (
-            <Profile
-              // state={props.state.profile}
-              // dispatch={props.dispatch}
-              store={props.store}
-            />
-          )}
-        />
+        <Route path="/messages" render={() => <MessagesContainer />} />
+        <Route path="/profile" render={() => <Profile />} />
 
+        <Route path="/users" render={() => <UsersContainer />} />
         <Route path="/settings" component={Settings} />
         <Route path="/music" component={Music} />
         <Route path="/news" component={News} />
